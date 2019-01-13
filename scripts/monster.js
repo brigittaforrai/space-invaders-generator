@@ -108,9 +108,10 @@
   })
 
   function saveMonster () {
-    let canvas = document.querySelector('canvas')
-    canvas.toBlob((blob) => {
-      saveAs(blob, `monster.png`);
-    }, 'image/png', 1)
+    canvasList.forEach((canvas) => {
+      canvas.toBlob((blob) => {
+        saveAs(blob, `monster.png`);
+      }, 'image/png', 1)
+    })
   }
 })()

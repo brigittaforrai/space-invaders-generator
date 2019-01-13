@@ -100,7 +100,7 @@ h1.shadow, h3.shadow {
 .buttons {
   position: absolute;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 50px;
   left: 0;
   bottom: 0;

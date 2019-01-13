@@ -40,7 +40,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   color: yellow;
   margin: 40px auto 15px auto;
-  font-size: 2.5em;
+  font-size: 3em;
   width: auto;
 }
 h1.main {
@@ -73,7 +73,6 @@ h3 {
   margin: 10px auto 30px auto;
   font-size: 1.3em;
   text-shadow: 4px -4px 0px #032887;
-  transform: rotateY(30deg);
 }
 
 .settings {

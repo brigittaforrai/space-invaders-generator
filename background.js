@@ -17,7 +17,7 @@
 
     star.style.width = size + 'px'
     star.style.height = size + 'px'
-    star.style.opacity = Math.random()
+    star.style.opacity = (Math.random() * 1.1) - 0.1
     star.style.backgroundColor = `rgb(${Math.round(Math.random() * 255)},
                                       ${Math.round(Math.random() * 255)},
                                       ${Math.round(Math.random() * 255)})`

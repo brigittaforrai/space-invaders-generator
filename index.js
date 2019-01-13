@@ -22,7 +22,6 @@
     canvasList.push(canvas)
     canvas.width = width;
     canvas.height = height;
-    // getMonster()
     drawMonster(canvas)
   }
 
@@ -99,8 +98,19 @@
   generateBtn.addEventListener('click', () => {
     getMonster()
     canvasList.forEach((canvas) => {
-      // getMonster()
       drawMonster(canvas)
     })
   })
+
+  let saveBtn = document.querySelector('button[name="download"]')
+  saveBtn.addEventListener('click', () => {
+    saveMonster()
+  })
+
+  function saveMonster () {
+    let canvas = document.querySelector('canvas')
+    canvas.toBlob((blob) => {
+      saveAs(blob, `monster.png`);
+    }, 'image/png', 1)
+  }
 })()

@@ -110,7 +110,7 @@
   function saveMonster () {
     canvasList.forEach((canvas) => {
       canvas.toBlob((blob) => {
-        saveAs(blob, `monster.png`);
+        saveAs(blob, `monster_brigittaforrai.png`);
       }, 'image/png', 1)
     })
   }

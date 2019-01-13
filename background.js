@@ -1,5 +1,4 @@
 (function bg () {
-  console.log('bg');
 
   let starsNum = 500
   let minSize = 1

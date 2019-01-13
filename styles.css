@@ -121,22 +121,22 @@ button {
   cursor: pointer;
 }
 .generate-btn {
-  background-color: pink;
-  color: tomato;
-}
-.generate-btn:hover {
   background-color: tomato;
   color: gold;
 }
+/* .generate-btn:hover {
+  background-color: tomato;
+  color: gold;
+} */
 
 .download-btn {
   background-color: deeppink;
   color: gold;
 }
-.download-btn:hover {
+/* .download-btn:hover {
   background-color: gold;
   color: hotpink;
-}
+} */
 .download-btn:active, .generate-btn:active {
   background-color: purple;
   color: greenyellow;
@@ -167,5 +167,17 @@ canvas {
   }
   canvas {
     max-width: 100%;
+  }
+}
+
+@media (hover: hover) {
+  .generate-btn:hover {
+    background-color: pink;
+    color: tomato;
+  }
+
+  .download-btn:hover {
+    background-color: gold;
+    color: hotpink;
   }
 }

@@ -1,10 +1,10 @@
 (function bg () {
 
-  let starsNum = 500
   let minSize = 1
   let maxSize = 5
   let w = window.innerWidth
   let h = window.innerHeight
+  let starsNum = (w * h) / 2000
 
   for(let s = 0; s < starsNum; s++) {
     let bg = document.querySelector('.bg')
